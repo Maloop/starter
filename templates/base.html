@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 {% load i18n %}
+{% spaceless %}
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="keywords" content="{% block meta_keywords %}{% trans "" %} {% endblock %}" /> 
+        <meta name="keywords" content="{% block meta_keywords %}{% trans "hi" %}{% endblock %}" /> 
         <meta name="description" content='{% block meta_description %} 
-            {% trans "" %}{% endblock %}
+            {% trans "hi" %}{% endblock %}
             '/>
         <link rel="stylesheet" href="{{ STATIC_URL }}css/screen.css" />
 
@@ -38,7 +39,6 @@
             </form>
         </header>
         <div id="content">
-
             {% if messages %}
             <ul class="messages">
                 {% for message in messages %}
@@ -46,11 +46,9 @@
                 {% endfor %}
             </ul>
             {% endif %}
-
             {% block content %}
             Content
             {% endblock %}
-
         </div>
         <div id="sidebar">
                 {% block sidebar %}
@@ -59,5 +57,7 @@
         </div>
     </div>
     
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     </body>
-
+</html>
+{% endspaceless %}
