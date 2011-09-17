@@ -1,0 +1,6 @@
+*.pyc
+~*
+*~
+/site_media/*
+*.swp
+.sass-cache*

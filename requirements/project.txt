@@ -1,0 +1,5 @@
+# freeze these requirements by adding versions
+django
+django-debug-toolbar
+django-extensions
+south
