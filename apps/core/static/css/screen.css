@@ -280,20 +280,20 @@ body .loud {
   border-radius: 14px;
   text-align: right;
 }
-/* line 25, ../sass/partials/_global.sass */
+/* line 24, ../sass/partials/_global.sass */
 #account #menu a {
   text-decoration: none;
   color: black;
   margin-right: 8px;
 }
 
-/* line 30, ../sass/partials/_global.sass */
+/* line 29, ../sass/partials/_global.sass */
 #top {
   background: white;
   height: 66px;
   margin-bottom: 10px;
 }
-/* line 35, ../sass/partials/_global.sass */
+/* line 34, ../sass/partials/_global.sass */
 #top #logo {
   float: left;
   font-size: 60px;
@@ -305,7 +305,7 @@ body .loud {
   text-decoration: none;
   color: black;
 }
-/* line 46, ../sass/partials/_global.sass */
+/* line 45, ../sass/partials/_global.sass */
 #top #search {
   width: 300px;
   height: 30px;
@@ -313,65 +313,13 @@ body .loud {
   margin-top: 10px;
 }
 
-/* line 52, ../sass/partials/_global.sass */
+/* line 51, ../sass/partials/_global.sass */
 #content {
-  margin: auto;
   float: left;
-}
-/* line 56, ../sass/partials/_global.sass */
-#content #recent-recipes {
-  margin-top: 30px;
-}
-/* line 58, ../sass/partials/_global.sass */
-#content #recent-recipes h1 {
-  margin-bottom: 10px;
-  color: #ef8106;
-}
-/* line 61, ../sass/partials/_global.sass */
-#content dl.captioned-image {
-  border: 1px solid #e0d3ab;
-  -moz-border-radius: 0.4em;
-  -webkit-border-radius: 0.4em;
-  position: relative;
-  padding: 0.6em;
-  margin: 0.4em;
-  float: left;
-}
-/* line 69, ../sass/partials/_global.sass */
-#content dl.captioned-image dt img {
-  display: block;
-}
-/* line 71, ../sass/partials/_global.sass */
-#content dl.captioned-image dd {
-  position: absolute;
-  left: 0;
-  bottom: 0.4em;
-  font: bold 1.5em Helvetica, sans-serif;
-}
-/* line 76, ../sass/partials/_global.sass */
-#content dl.captioned-image.top dd {
-  top: 1.25em;
-}
-/* line 78, ../sass/partials/_global.sass */
-#content dl.captioned-image dd span {
-  width: 225px;
-  display: block;
-  float: left;
-  clear: both;
-  background: black;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 0.25em 0.5em;
-  color: white;
-}
-/* line 87, ../sass/partials/_global.sass */
-#content dl.captioned-image cite {
-  color: #9f954a;
-  font-size: 60%;
 }
 
-/* line 91, ../sass/partials/_global.sass */
+/* line 54, ../sass/partials/_global.sass */
 #sidebar {
-  margin: auto;
   background: #3c5a64;
   float: right;
 }
@@ -384,7 +332,7 @@ body {
   *zoom: 1;
 }
 
-/* line 5, ../sass/partials/_default.sass */
+/* line 3, ../sass/partials/_default.sass */
 #top {
   display: inline;
   float: left;
@@ -396,7 +344,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 8, ../sass/partials/_default.sass */
+/* line 6, ../sass/partials/_default.sass */
 #content {
   display: inline;
   float: left;
@@ -408,7 +356,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 11, ../sass/partials/_default.sass */
+/* line 9, ../sass/partials/_default.sass */
 #sidebar {
   display: inline;
   float: left;
