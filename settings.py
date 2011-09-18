@@ -106,7 +106,19 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.core.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.contrib.messages.context_processors.messages",
+    "django.core.context_processors.request",
+)
+
 
 ROOT_URLCONF = 'urls'
 
@@ -118,6 +130,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    "registration_defaults",
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -131,6 +144,8 @@ INSTALLED_APPS = (
     'debug_toolbar',
     # The core app, put static stuff in there
     'core',
+    "registration",
+    "uni_form",
 )
 
 # DEBUG-TOOLBAR SETTINGS
@@ -155,12 +170,16 @@ DEBUG_TOOLBAR_PANELS = (
 # EMAIL SETTINGS
 
 #Email Server Settings
-DEFAULT_FROM_EMAIL = ''
-EMAIL_HOST = ''
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_PORT =''
-EMAIL_USE_TLS = True
+#DEFAULT_FROM_EMAIL = ''
+#EMAIL_HOST = ''
+#EMAIL_HOST_USER = ''
+#EMAIL_HOST_PASSWORD = ''
+#EMAIL_PORT =''
+#EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# ACCOUNTS
+
+ACCOUNT_ACTIVATION_DAYS = 2
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
