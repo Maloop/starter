@@ -146,6 +146,8 @@ INSTALLED_APPS = (
     'core',
     "registration",
     "uni_form",
+    "easy_profiles",
+    "profile",
 )
 
 # DEBUG-TOOLBAR SETTINGS
@@ -180,6 +182,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # ACCOUNTS
 
 ACCOUNT_ACTIVATION_DAYS = 2
+AUTH_PROFILE_MODULE = "profile.Profile"
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

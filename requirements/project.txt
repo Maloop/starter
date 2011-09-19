@@ -7,3 +7,4 @@ south
 https://bitbucket.org/ubernostrum/django-registration/get/tip.zip
 https://github.com/pydanny/django-uni-form/zipball/master
 -e git://github.com:sepow/registration-defaults.git#egg=django-registration-defaults
+https://github.com/sepow/django-easy-profiles/zipball/master
