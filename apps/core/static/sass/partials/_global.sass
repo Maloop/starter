@@ -50,7 +50,48 @@ body
 
 #content
     float: left 
+    margin-top: 10px
 
 #sidebar
     background: rgb(60,90,100)
     float: right
+    margin-top: 10px
+
+.minitabs
+    margin: 0
+    padding: 0 0 20px 10px
+    border-bottom: 0px solid #696
+    li
+        margin: 0
+        padding: 0
+        display: inline
+        list-style-type: none
+    a
+        &:link, &:visited
+            float: left
+            line-height: 14px
+            font-weight: bold
+            margin: 0 10px 4px 10px
+            padding-bottom: 1px
+            text-decoration: none
+            color: #092E20
+        &.active
+            &:link, &:visited
+                border-bottom: 2px solid #092E20
+                padding-bottom: 1px
+                background: #fff
+                color: #092E20
+        &:hover
+            border-bottom: 2px solid #092E20
+            padding-bottom: 1px
+            background: #fff
+            color: #092E20
+
+#first-nav
+    height: 23px
+
+#second-nav
+    padding-top: 5px
+    padding-left: 15px
+    margin-bottom: 10px
+    height: 23px

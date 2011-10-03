@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load i18n %}
+{% load site_tags %}
 {% spaceless %}
 <html lang="en">
     <head>
@@ -19,14 +20,12 @@
     <body>
         <nav id="account">&nbsp;
             <div id="menu">&nbsp;
-
                 {% if user.is_authenticated %}
                     {# <a href="{% url %}">{% trans 'profile' %}</a> #}
-                    <a href="{% url auth_logout %}">
-                        {% trans 'logout' %}
-                    </a>
+                    <a href="{% url profile_detail user.username %}">{% trans 'profile' %}</a>| 
+                    <a href="{% url auth_logout %}">{% trans 'logout' %}</a>
                 {% else %}
-                    <a href="{% url auth_login %}?next={{request.path}}">login</a> or
+                    <a href="{% url auth_login %}?next={{request.path}}">login</a>or
                     <a href="{% url registration_register %}">register</a>
                 {% endif %}
             </div>
@@ -37,6 +36,16 @@
                 <input id="search" ype="search" id="id_q" name="q" placeholder="Search" >
             </form>
         </header>
+	    <nav id="first-nav">
+	      <ul class="minitabs" >
+              <div id="navigation">
+                  {% url home as home %}
+                    {% url test as test %}
+	            <a class="{% active_url request home 1 1 %}" href="{{home}}">Home</a> 
+	            <a class="{% active_url request test %}" href="{{test}}">Test</a>
+	        </div>
+	      </ul>        
+	    </nav>
         <div id="content">
             {% if messages %}
             <ul class="messages">

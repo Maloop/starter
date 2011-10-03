@@ -324,6 +324,56 @@ body .loud {
   float: right;
 }
 
+/* line 58, ../sass/partials/_global.sass */
+.minitabs {
+  margin: 0;
+  padding: 0 0 20px 10px;
+  border-bottom: 0px solid #669966;
+}
+/* line 62, ../sass/partials/_global.sass */
+.minitabs li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style-type: none;
+}
+/* line 68, ../sass/partials/_global.sass */
+.minitabs a:link, .minitabs a:visited {
+  float: left;
+  line-height: 14px;
+  font-weight: bold;
+  margin: 0 10px 4px 10px;
+  padding-bottom: 1px;
+  text-decoration: none;
+  color: #092e20;
+}
+/* line 77, ../sass/partials/_global.sass */
+.minitabs a.active:link, .minitabs a.active:visited {
+  border-bottom: 2px solid #092e20;
+  padding-bottom: 1px;
+  background: white;
+  color: #092e20;
+}
+/* line 82, ../sass/partials/_global.sass */
+.minitabs a:hover {
+  border-bottom: 2px solid #092e20;
+  padding-bottom: 1px;
+  background: white;
+  color: #092e20;
+}
+
+/* line 88, ../sass/partials/_global.sass */
+#first-nav {
+  height: 23px;
+}
+
+/* line 91, ../sass/partials/_global.sass */
+#second-nav {
+  padding-top: 5px;
+  padding-left: 15px;
+  height: 23px;
+}
+
 /* line 1, ../sass/partials/_default.sass */
 body {
   width: 1290px;
@@ -332,7 +382,31 @@ body {
   *zoom: 1;
 }
 
-/* line 3, ../sass/partials/_default.sass */
+/* line 4, ../sass/partials/_default.sass */
+#first-nav {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 890px;
+}
+/* line 147, ../../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #first-nav {
+  overflow-x: hidden;
+}
+
+/* line 7, ../sass/partials/_default.sass */
+#second-nav {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 890px;
+}
+/* line 147, ../../../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #second-nav {
+  overflow-x: hidden;
+}
+
+/* line 10, ../sass/partials/_default.sass */
 #top {
   display: inline;
   float: left;
@@ -344,7 +418,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 6, ../sass/partials/_default.sass */
+/* line 13, ../sass/partials/_default.sass */
 #content {
   display: inline;
   float: left;
@@ -356,7 +430,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 9, ../sass/partials/_default.sass */
+/* line 16, ../sass/partials/_default.sass */
 #sidebar {
   display: inline;
   float: left;

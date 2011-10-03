@@ -1,0 +1,7 @@
+{% load uni_form_tags %} 
+<form method="post" class="uniForm"> 
+{% csrf_token %}
+{{form|as_uni_form}}
+<input type="submit" value="{{ submitvalue }}"/>
+<input type="hidden" name="next" value="{{ next }}" />
+</form> 
